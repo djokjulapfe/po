@@ -34,6 +34,12 @@ class Multiply(Feature):
         return x * self.factor
 
 
+class Mean(Feature):
+
+    def get_feature(self, x: np.ndarray):
+        return np.mean(x)
+
+
 class LinearFilter(Feature):
 
     def __init__(self, kernel: np.ndarray):
